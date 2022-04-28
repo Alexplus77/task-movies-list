@@ -19,7 +19,7 @@ export const MovieCard = ({ data }) => {
     <Card
       loading={loading}
       className={style.container}
-      cover={<img alt="example" src={POSTER_PATH} />}
+      cover={<img className={style.image} alt="example" src={POSTER_PATH} />}
     >
       <Meta
         className={style.meta}
