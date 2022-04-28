@@ -1,0 +1,14 @@
+body{
+  display: grid;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  justify-items: center;
+}
+.app{
+  display: grid;
+  justify-items: center;
+  width: 1300px;
+  height: 100vh;
+
+}

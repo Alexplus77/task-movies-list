@@ -1,0 +1,13 @@
+.container{
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #bfbff7;
+    height: 100vh;
+
+}
+.title{
+
+}
