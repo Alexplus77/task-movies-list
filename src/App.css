@@ -4,11 +4,24 @@ body{
   top: 0;
   bottom: 0;
   justify-items: center;
+
 }
 .app{
   display: grid;
   justify-items: center;
   width: 1300px;
   height: 100vh;
+}
 
+::-webkit-scrollbar-track{
+  background-color: #9595cb;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+
+  background: #022091;
+  border-radius: 10px;
 }
