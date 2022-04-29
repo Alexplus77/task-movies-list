@@ -1,7 +1,7 @@
-import { FITCH_DATA, SAVE_DATA_MOVIE, LOADING } from "./actionTypes";
+import { FETCH_DATA, SAVE_DATA_MOVIE, LOADING } from "./actionTypes";
 
-export const handleFitchData = (data) => ({
-  type: FITCH_DATA,
+export const handleFetchData = (data) => ({
+  type: FETCH_DATA,
   payload: data,
 });
 

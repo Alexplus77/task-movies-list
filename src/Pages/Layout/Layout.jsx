@@ -8,7 +8,7 @@ import { Pagination } from "antd";
 export const Layout = () => {
   const navigate = useNavigate();
   const initialPage = 1;
-  const { movies } = useSelector((state) => state.stateReducer);
+  const { movies } = useSelector((state) => state.movieReducer);
   const { id } = useParams();
 
   const onChange = (pageClick) => {

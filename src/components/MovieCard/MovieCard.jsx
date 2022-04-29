@@ -8,11 +8,11 @@ import { Card, Button } from "antd";
 export const MovieCard = ({ data }) => {
   const POSTER_PATH = `${process.env.REACT_APP_POSTER_PATH}${data.poster_path}`;
   const descriptionMovie = data.overview.split(" ").slice(0, 7).join(" ");
-  const { loading } = useSelector((state) => state.stateReducer);
+  const { loading } = useSelector((state) => state.movieReducer);
   const { Meta } = Card;
   const dispatch = useDispatch();
 
-  const handleClick = (data) => {
+  const handleClickButton = (data) => {
     dispatch(saveDataMovie(data));
   };
   return (
@@ -28,7 +28,7 @@ export const MovieCard = ({ data }) => {
       />
       <Link to={`${data.id}`}>
         <Button
-          onClick={() => handleClick(data)}
+          onClick={() => handleClickButton(data)}
           className={style.btn}
           type={"primary"}
         >

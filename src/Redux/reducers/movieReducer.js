@@ -1,5 +1,5 @@
 import {
-  FITCH_DATA,
+  FETCH_DATA,
   SAVE_DATA_MOVIE,
   LOADING,
 } from "Redux/actions/actionTypes";
@@ -9,9 +9,9 @@ const initialState = {
   movieItem: null,
   loading: false,
 };
-export const stateReducer = (state = initialState, action) => {
+export const movieReducer = (state = initialState, action) => {
   switch (action.type) {
-    case FITCH_DATA:
+    case FETCH_DATA:
       return {
         ...state,
         movies: action.payload,

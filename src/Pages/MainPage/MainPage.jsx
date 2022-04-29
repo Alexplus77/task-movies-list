@@ -1,18 +1,18 @@
 import React, { useEffect } from "react";
 import { MovieCard } from "components/MovieCard";
-import { fitchData } from "Redux/middlewares/fitchData";
+import { fetchData } from "Redux/middlewares/fetchData";
 import { useDispatch, useSelector } from "react-redux";
 import style from "./MainPage.module.css";
 import { useNavigate, useParams } from "react-router-dom";
 
 export const MainPage = () => {
-  const { movies } = useSelector((state) => state.stateReducer);
+  const { movies } = useSelector((state) => state.movieReducer);
   const dispatch = useDispatch();
   const { page } = useParams();
   const navigate = useNavigate();
   const initialPage = 1;
   useEffect(() => {
-    dispatch(fitchData(page));
+    dispatch(fetchData(page));
     !page && navigate(`movies/${initialPage}`);
   }, [page]);
   return (

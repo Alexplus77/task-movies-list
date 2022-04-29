@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import style from "./MovieItem.module.css";
 
 export const MovieItem = () => {
-  const { movieItem } = useSelector((state) => state.stateReducer);
+  const { movieItem } = useSelector((state) => state.movieReducer);
   const POSTER_PATH = `${process.env.REACT_APP_POSTER_PATH}${movieItem?.poster_path}`;
   const navigate = useNavigate();
   useEffect(() => {
