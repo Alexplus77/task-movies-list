@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./MovieCard.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { saveDataMovie } from "Redux/actions/createActions";
+import { saveDataMovie } from "State/movieSlice";
 import { Link } from "react-router-dom";
 import { Card, Button } from "antd";
 

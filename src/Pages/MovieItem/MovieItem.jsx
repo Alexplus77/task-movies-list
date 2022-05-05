@@ -9,9 +9,12 @@ export const MovieItem = () => {
   const { movieItem } = useSelector((state) => state.movieReducer);
   const POSTER_PATH = `${process.env.REACT_APP_POSTER_PATH}${movieItem?.poster_path}`;
   const navigate = useNavigate();
+
   useEffect(() => {
+    console.log(movieItem);
     !movieItem && navigate(-1);
   }, []);
+
   return (
     movieItem && (
       <Row className={style.container}>
