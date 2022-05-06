@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { MovieCard } from "components/MovieCard";
-import { fetchData } from "State/middlewares/fetchData";
+import { fetchData } from "src/Stor/middlewares/fetchData";
 import { useDispatch, useSelector } from "react-redux";
 import style from "./MainPage.module.css";
 import { useNavigate, useParams } from "react-router-dom";
