@@ -3,7 +3,7 @@ import style from "./Layout.module.css";
 import { useSelector } from "react-redux";
 import React from "react";
 import { Header } from "components/Header";
-import { Pagination } from "antd";
+import { Pagination, Input } from "antd";
 
 export const Layout = () => {
   const navigate = useNavigate();
